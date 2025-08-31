@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Noto+Sans+TC:wght@100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+$primary-color: #ffd54f;
+$secondary-color: #ffb300;
+$txt-color: #212121;
+$hover-color: #fff3e0;
+
+//----------- media queries ----------//
+
+@mixin mediaquery($min, $max) {
+  @if $min !=null and $max !=null {
+    @media all and (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else if $max==null {
+    @media all and (min-width: $min) {
+      @content;
+    }
+  } @else if $min==null {
+    @media all and (max-width: $max) {
+      @content;
+    }
+  }
+}
+
+html,
+body {
+  position: relative;
+  overflow: hidden auto;
+  font-family: 'Sansation', 'Noto Sans TC', sans-serif;
+  font-weight: 400;
+  margin: 0 auto;
+  letter-spacing: 0.05em;
+  line-height: 1.56;
+  color: $txt-color;
+}
+.porel {
+  position: relative;
+}
+.center {
+  text-align: center !important;
+}
+//---------通用設定--------
+::selection {
+  background-color: $txt-color;
+  color: $hover-color;
+}
+img {
+  max-width: 100%;
+  //針對圖片不讓使用者反白
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.mo {
+  display: none;
+  @include mediaquery(null, 767px) {
+    display: block;
+  }
+}
+.pc {
+  display: none;
+  @include mediaquery(768px, null) {
+    display: block;
+  }
+}
+a,
+a:hover {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+*:focus {
+  outline: none;
+}
+
+// ---------- 內頁通吃 ------------
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h2.title {
+  text-align: center;
+  font-size: 68px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  @include mediaquery(768px, 991px) {
+    font-size: 45px;
+  }
+  @include mediaquery(null, 767px) {
+    font-size: 30px;
+  }
+}
