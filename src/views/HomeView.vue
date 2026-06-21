@@ -46,7 +46,7 @@ import WorkExperience from '../components/WorkExperience.vue'
 <style lang="scss">
 section {
   position: relative;
-  padding: 20px;
+  padding: 20px 20px;
 }
 .home {
   position: relative;
