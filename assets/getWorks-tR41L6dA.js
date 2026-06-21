@@ -1,0 +1,1 @@
+import{a as r}from"./index-EqYDpQGC.js";import{a}from"./index-TGn_YrIg.js";const p=()=>{const s=a([]),t=a([]);return{works:s,protfolio:t,apiURL:async()=>{try{const{data:o}=await r("https://rslife.site/api/works.php");s.value=o,t.value=o,console.log(o)}catch(o){console.log(o)}}}};export{p as g};
