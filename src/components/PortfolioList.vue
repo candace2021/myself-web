@@ -60,7 +60,6 @@ apiURL()
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/main.scss';
 .portfolio {
   display: flex;
   flex-direction: column;

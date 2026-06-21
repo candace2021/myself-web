@@ -37,7 +37,6 @@ const goBack = () => {
 </template>
 
 <style scoped lang="scss">
-@import '@/assets/scss/main.scss';
 .portfolioDetail {
   padding: 50px 0;
   max-width: 90%;

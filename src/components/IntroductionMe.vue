@@ -90,7 +90,6 @@ const onSlideChange = (swiper) => {
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/main.scss';
 .introduction {
   display: flex;
   flex-direction: column;

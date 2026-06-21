@@ -114,7 +114,6 @@ const sendEmail = async () => {
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/main.scss';
 .contact {
   display: flex;
   flex-direction: column;

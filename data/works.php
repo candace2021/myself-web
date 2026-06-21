@@ -2,16 +2,22 @@
 header("Content-Type: application/json; charset=utf-8");
 header("Access-Control-Allow-Origin: *");
 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 // MySQL 連線設定
 $host = "localhost";
-$dbname = "rsliksrj_removeStudio";
-$username = "rsliksrj_root";
-$password = "root54321%77684";
+$dbname = "rsliksrj_other";
+$username = "rsliksrj_booking";
+$password = "booking_studio";
 
 $conn = new mysqli($host, $username, $password, $dbname);
 if ($conn->connect_error) {
     http_response_code(500);
-    die(json_encode(["error"=>"Database connection failed"]));
+    die(json_encode([
+        "error" => "Database connection failed",
+        "detail" => $conn->connect_error
+    ]));
 }
 $conn->set_charset("utf8mb4"); // 設定 UTF-8 編碼
 

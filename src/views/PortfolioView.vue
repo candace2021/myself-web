@@ -60,7 +60,6 @@ const isOpen = (item) => {
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/main.scss';
 .portfolioList {
   padding: 50px 0;
   max-width: 90%;

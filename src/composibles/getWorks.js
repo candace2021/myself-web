@@ -10,6 +10,7 @@ const getWorks = () => {
       const { data } = await axios('https://rslife.site/api/works.php')
       works.value = data
       protfolio.value = data
+      console.log(data)
     } catch (error) {
       console.log(error)
     }

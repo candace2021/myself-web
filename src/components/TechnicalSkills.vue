@@ -46,24 +46,27 @@
         <div class="txt">
           <div class="m-title">JavaScript / jQuery</div>
           <ul class="list">
-            <li>- 操作 DOM、事件綁定、Axios</li>
-            <li>- 能撰寫模組化 JS 程式</li>
-            <li>- 使用 JQ 處理專案互動效果</li>
+            <li>- 熟悉 ES6+ 語法、事件處理與 DOM 操作</li>
+            <li>- 使用 Axios 進行 API 串接與資料處理</li>
+            <li>- 能撰寫模組化 JavaScript 程式</li>
+            <li>- 使用 jQuery 開發網站互動效果</li>
           </ul>
         </div>
       </li>
       <li>
         <div class="icon">
           <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nuxt/nuxt-original.svg"
           />
         </div>
         <div class="txt">
-          <div class="m-title">TypeScript</div>
+          <div class="m-title">Nuxt.js</div>
           <ul class="list">
-            <li>- 在 Vue 專案中撰寫型別註解</li>
-            <li>- 使用 interface 進行程式結構設計</li>
-            <li>- 提升程式碼可讀性與可維護性</li>
+            <li>- 使用 Nuxt 3 建立網站架構與頁面開發</li>
+            <li>- 熟悉 Layout、Page、Component 模組化開發</li>
+            <li>- 使用 Composition API 開發互動功能</li>
+            <li>- 使用 useHead / useSeoMeta 管理 SEO 與 Meta 資訊</li>
+            <li>- 了解 SSR 對搜尋引擎收錄與社群分享的優勢</li>
           </ul>
         </div>
       </li>
@@ -78,6 +81,7 @@
           <ul class="list">
             <li>- 熟悉 Git 基本指令，能有效管理專案版本</li>
             <li>- 善用分支 branch 與合併 merge 進行功能開發與版本維護</li>
+            <li>- 使用 GitHub 進行程式碼版本控管與協作</li>
           </ul>
         </div>
       </li>
@@ -101,7 +105,6 @@
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/main.scss';
 .skills {
   display: flex;
   flex-direction: column;

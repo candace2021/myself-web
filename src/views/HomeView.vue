@@ -44,8 +44,6 @@ import WorkExperience from '../components/WorkExperience.vue'
 </template>
 
 <style lang="scss">
-@import '@/assets/scss/main.scss';
-
 section {
   position: relative;
   padding: 20px;

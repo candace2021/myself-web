@@ -58,14 +58,16 @@ const menuActive = () => {
       <div class="community">
         <div class="icon104">
           <a
-            href="https://pda.104.com.tw/profile/share/djRA69Dge4jVCMSWikUVThWdxgUo3Rqd"
+            href="https://pda.104.com.tw/profile/share/a62MumUpUvuIVjzXxY3ux8gbHlokQNLa"
             target="_blank"
             ><img src="https://www.saswafer.com/wp-content/uploads/2019/04/104_logo.png" alt=""
           /></a>
         </div>
         <div class="cake">
           <a href="https://www.cake.me/s--d0AyhLqNGFZrYzVfBS1YYA--/candace-wu" target="_blank"
-            ><img src="https://www.cake.me/_next/static/media/cake.9d3a50b4.svg" alt=""
+            ><img
+              src="https://next-build-assets.cake.me/630407824ff1626e286866329cd4e797c3940f75/_next/static/media/cake.285942e1.svg"
+              alt=""
           /></a>
         </div>
       </div>
@@ -78,8 +80,7 @@ const menuActive = () => {
 </template>
 
 <style lang="scss">
-@import '@/assets/scss/main.scss';
-
+@use '@/assets/scss/reset.scss';
 main {
   margin-left: 285px;
   @include mediaquery(768px, 1200px) {

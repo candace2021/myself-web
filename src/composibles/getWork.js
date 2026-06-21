@@ -8,6 +8,7 @@ const getWork = (id) => {
     try {
       const { data } = await axios('https://rslife.site/api/works.php/' + id)
       work.value = data
+      console.log(data)
     } catch (error) {
       console.log(error)
     }

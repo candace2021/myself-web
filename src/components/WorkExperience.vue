@@ -40,7 +40,6 @@
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/main.scss';
 .experience {
   display: flex;
   flex-direction: column;
